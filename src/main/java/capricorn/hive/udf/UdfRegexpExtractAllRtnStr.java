@@ -43,7 +43,12 @@ public class UdfRegexpExtractAllRtnStr extends UDF {
             }
         }
 
-        return sb.toString().replaceFirst(delimiter, "");
+        String result = sb.toString().replaceFirst(delimiter, "");
+        if (result == null || "".equals(result)) {
+            return null;
+        } else {
+            return result;
+        }
     }
 
     public String evaluate(String s, String regex, String suffix) {
