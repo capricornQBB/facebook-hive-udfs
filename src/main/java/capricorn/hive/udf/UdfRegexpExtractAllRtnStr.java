@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 
 /**
  * @Description :
- * CREATE TEMPORARY FUNCTION regexp_extract_all AS 'capricorn.hive.udf.UdfRegexpExtractAll';
+ * CREATE TEMPORARY FUNCTION regexp_extract_all ASa 'capricorn.hive.udf.UdfRegexpExtractAll';
  * SELECT regexp_extract_all(name,'^[0-9]*$','\t') from users limit 1;
  * @Author : Capricorn.QBB
  * @Date : 2019-08-06
